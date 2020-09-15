@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activation-page</title>
+    <style type="text/css">
+
+        body {
+            background-color: #211E1F;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100%;
+        }
+
+        .background {
+            background-image: url("background.jpg");
+            width: max-content;
+            height: max-content;
+        }
+
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: 0.2;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 2rem;
+            border: 6px solid #E9C003;
+            width: 25rem;
+            height: 20rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header {
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            html{
+                font-size: 16px;
+            }
+            .welcome{
+                font-size: 10px;
+                width: 15rem;
+                height: 10rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://kaosenlared.net/wp-content/uploads/2019/02/12-de-feb-ind%C3%ADgenas.jpg" id="bg" alt="">
+    <div class="welcome">
+        <div>
+            <div class="header">
+                <h2>Ahora ya eres un colaborador</h2>
+                <h1>BIENVENIDO</h1>
+                <h3><%= user %></h3>
+            </div>
+            <p> Regresa a tu aplicación móvil y presiona el botón
+                "Cuenta activada"
+            </p>
+            <p>Si quieres conocer más del Centro de Documentación de Pueblos y Nacionalidades
+                <a href="https://www.corape.org.ec/centrodedocumentacion/" target="_blank">click aqui</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

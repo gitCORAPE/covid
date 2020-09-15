@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/logo_grdnt"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:src="@drawable/icon_share_preview"
+                android:textAlignment="center" />
+
+            <VideoView
+                android:id="@+id/videoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/imgSelectedContent"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/colorTextLabel"
+                    android:src="@drawable/icon_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/lblSelectedContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_option_content"
+                    android:layout_marginLeft="15dp"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textStyle="italic"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:textSize="@dimen/dimenEditText"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorWhite"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <EditText
+                    android:id="@+id/txtThemeContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_theme"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_edittext_states"
+                    android:textSize="@dimen/dimenEditText"
+                    android:textColor="@color/colorTextEditText"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtCommunityContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:padding="10dp"
+                    android:dropDownHeight="200dp"
+                    android:singleLine="true"
+                    android:completionThreshold="0"
+                    android:background="@drawable/rounded_edittext_states"
+                    android:textSize="@dimen/dimenEditText"
+                    android:hint="@string/hint_community"
+                    android:popupBackground="@drawable/rounded_edittext"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:textColor="@color/colorTextEditText"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp">
+
+
+                    <EditText
+                        android:id="@+id/txtDescriptionContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="@string/hint_description"
+                        android:textColorHint="@color/colorHintEditText"
+                        android:gravity="left|center"
+                        android:ems="10"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:textSize="@dimen/dimenEditText"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/colorTextEditText"/>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/btnEditContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/curved_button_green"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/btn_edit_content"
+                    android:textColor="@color/colorTextButton"
+                    android:textSize="@dimen/dimenTitleLabel"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/btnCancelEditContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/curved_button_red"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/btn_cancel"
+                    android:textColor="@color/colorTextButton"
+                    android:textSize="@dimen/dimenTitleLabel"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

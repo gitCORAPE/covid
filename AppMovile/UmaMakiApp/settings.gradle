@@ -1,0 +1,1 @@
+include ':app', ':apache-httpcomponents-httpcore', ':commons-codec-1.10', ':gson-1.4', ':httpclient-4.0.3', ':httpmime-4.2.4'

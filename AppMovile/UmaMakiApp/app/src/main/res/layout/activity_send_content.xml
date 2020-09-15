@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_grdnt"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:src="@drawable/icon_share_preview"
+                android:textAlignment="center" />
+
+            <VideoView
+                android:id="@+id/videoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#4a5a71" />
+
+                <com.nightonke.boommenu.BoomMenuButton
+                    android:id="@+id/bmb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:bmb_hamHeight="0dp"
+                    app:bmb_hamWidth="0dp">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_boom"
+                        android:tint="@color/colorTextLabel" />
+
+
+                </com.nightonke.boommenu.BoomMenuButton>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#4a5a71" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/img_selected_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_content"
+                    android:tint="@color/colorTextLabel" />
+
+                <TextView
+                    android:id="@+id/label_content_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="@string/hint_option_content"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:textSize="@dimen/dimenEditText"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <EditText
+                    android:id="@+id/txt_content_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_states"
+                    android:hint="@string/hint_theme"
+                    android:padding="10dp"
+                    android:textColor="@color/colorTextEditText"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:textSize="@dimen/dimenEditText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_content_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_states"
+                    android:completionThreshold="0"
+                    android:dropDownHeight="200dp"
+                    android:hint="@string/hint_community"
+                    android:padding="10dp"
+                    android:popupBackground="@drawable/rounded_edittext"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextEditText"
+                    android:textColorHint="@color/colorHintEditText"
+                    android:textSize="@dimen/dimenEditText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <EditText
+                        android:id="@+id/txt_content_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:ems="10"
+                        android:gravity="left|center"
+                        android:hint="@string/hint_description"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:textColor="@color/colorTextEditText"
+                        android:textColorHint="@color/colorHintEditText"
+                        android:textSize="@dimen/dimenEditText" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/btn_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/curved_button_green"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/btn_send"
+                    android:textColor="@color/colorTextButton"
+                    android:textSize="@dimen/dimenTitleLabel"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/curved_button_red"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/btn_clean"
+                    android:textColor="@color/colorTextButton"
+                    android:textSize="@dimen/dimenTitleLabel"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

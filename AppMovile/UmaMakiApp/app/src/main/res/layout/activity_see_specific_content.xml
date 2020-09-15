@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_grdnt"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+
+            <LinearLayout
+                android:id="@+id/btnSeeMultimediaContent"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_see_multimedia"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextLabel"
+                    android:textSize="@dimen/dimenEditText"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/icon_share_preview"
+                    android:textAlignment="center"
+                    android:tint="@color/colorTextLabel" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTextLabel" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtNameAuthorContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_content_name"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorTextLabel"
+                        android:textSize="@dimen/dimenEditText" />
+
+                    <TextView
+                        android:id="@+id/txtCommunityTypeContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_community_type"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorTextLabel"
+                        android:textSize="@dimen/dimenSubTitleLabel" />
+
+                    <TextView
+                        android:id="@+id/txtStateContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_content_state"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/dimenSubTitleLabel" />
+
+                    <TextView
+                        android:id="@+id/txtDescriptionContent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_content_description"
+                        android:lines="4"
+                        android:maxLines="4"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorTextLabel"
+                        android:textSize="@dimen/dimenSubTitleLabel" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtNumberLikes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/dimenEditText" />
+
+                            <ImageView
+                                android:id="@+id/btnLike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingStart="10dp"
+                                android:src="@drawable/icon_like"
+                                android:tint="@color/colorHintEditText" />
+
+                            <TextView
+                                android:id="@+id/txtNumberDislikes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingStart="20dp"
+                                android:textSize="@dimen/dimenEditText" />
+
+                            <ImageView
+                                android:id="@+id/btnDislike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/icon_dislike"
+                                android:tint="@color/colorHintEditText" />
+
+
+
+                            <ImageView
+                                android:id="@+id/btnApproveContent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="30dp"
+                                android:src="@drawable/approve"
+                                android:tint="@color/colorHintEditText" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/colorTextLabel" />
+
+
+                <EditText
+                    android:id="@+id/txtComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="top"
+                    android:hint="@string/hint_write_comment"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="250"
+                    android:padding="10dp"
+                    android:textColor="@color/colorTextEditText"
+                    android:textColorHint="@color/colorHintEditText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/btnSendComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/curved_button_blue"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/btn_send_comment"
+                        android:textColor="@color/colorTextButton"
+                        android:textSize="@dimen/dimenTitleLabel"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/colorTextLabel" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/btnComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/curved_button_green"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/btn_comments"
+                        android:textColor="@color/colorTextButton"
+                        android:textSize="@dimen/dimenTitleLabel"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/btnReviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/curved_button_orange"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/btn_reviews"
+                        android:textColor="@color/colorTextButton"
+                        android:textSize="@dimen/dimenTitleLabel"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

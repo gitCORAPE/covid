@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "lib": ["es6"],
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true,
+      "alwaysStrict": true,
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "resolveJsonModule": true,
+      "strict": false,
+      "noImplicitAny": false,
+      "outDir": "./build/",
+      "preserveConstEnums": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "target": "ES5",
+      "pretty": true,
+      "baseUrl": ".ejs",
+      "paths": {
+        "views": ["/views"]
+      }
+    },
+    "exclude": ["./node_modules", "test/**/*", "./build/**/*"],
+    "include": [
+     "src/**/*", "test"
+   ]
+  }
